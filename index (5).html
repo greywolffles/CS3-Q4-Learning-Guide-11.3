@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1>Axolotl Teachings</h1>
+	<h2>Sign Up Sheet</h2>
+	<form onsubmit="return outputText()" onreset="clearText()">
+		<fieldset form="input">
+			<legend>Input</legend>
+
+			<!--Name-->
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"  onblur="nameOnblur()" onfocus="nameOnfocus()">
+			<br>
+
+			<!--Gender-->
+			<label for="gender">Gender:</label>
+			<select name="gender" id="gender" onblur="genderOnblur()" onfocus="genderOnfocus()">
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				<option value="Others">Others</option>
+			</select>
+			<br>
+
+			<!--Username-->
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" onblur="usernameOnblur()" onfocus="usernameOnfocus()">
+			<br>
+
+			<!--Password-->
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" onblur="passwordOnblur()" onfocus="passwordOnfocus()">
+			<br>
+
+			<!--Email-->
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" onblur="emailOnblur()" onfocus="emailOnfocus()">
+			<br>
+
+			<!--Address-->
+			<label for="address">Address:</label>
+			<input type="text" id="address" name="address" onblur="addressOnblur()" onfocus="addressOnfocus()">
+			<br>
+
+			<!--Interests-->
+			<label for="interests">Write a short paragraph about your interests:</label></br>
+			<textarea id="interests" name="interests" rows="10" cols="50" onblur="interestsOnblur()" onfocus="interestsOnfocus()"> </textarea>
+			<br>
+
+			<!--Buttons-->
+			<input type="submit" class="submit" value="Submit">
+			<input type="reset" class="reset" value="Reset">
+		</fieldset>
+	</form>
+
+	<!--User Information-->
+	<h2 id="userInformationOutput"></h2>
+	<p id="nameOutput"></p>
+	<p id="genderOutput"></p>
+  <p id="usernameOutput"></p>
+	<p id="passwordOutput"></p>
+	<p id="emailOutput"></p>
+	<p id="addressOutput"></p>
+	<p id="interestsOutput"></p>
+	
+	<script>
+		// Name
+		function nameOnblur() {
+			var x = document.getElementById("name").value;
+			if (x == "") {
+				document.getElementById("name").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("name").style.border = "2px solid green";
+			}
+		}
+		function nameOnfocus() {
+			var x = document.getElementById("name").value;
+			if (x == "") {
+				document.getElementById("name").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("name").style.border = "2px solid green";
+			}
+		}
+
+		// Gender
+		function genderOnblur() {
+			var x = document.getElementById("gender").value;
+			if (x == "") {
+				document.getElementById("gender").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("gender").style.border = "2px solid green";
+			}
+		}
+		function genderOnfocus() {
+			var x = document.getElementById("gender").value;
+			if (x == "") {
+				document.getElementById("gender").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("gender").style.border = "2px solid green";
+			}
+		}
+
+		// Username
+		function usernameOnblur() {
+			var x = document.getElementById("username").value;
+			if (x == "") {
+				document.getElementById("username").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("username").style.border = "2px solid green";
+			}
+		}
+		function usernameOnfocus() {
+			var x = document.getElementById("username").value;
+			if (x == "") {
+				document.getElementById("username").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("username").style.border = "2px solid green";
+			}
+		}
+
+		// Password
+		function passwordOnblur() {
+			var x = document.getElementById("password").value;
+			if (x == "") {
+				document.getElementById("password").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("password").style.border = "2px solid green";
+			}
+		}
+		function passwordOnfocus() {
+			var x = document.getElementById("password").value;
+			if (x == "") {
+				document.getElementById("password").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("password").style.border = "2px solid green";
+			}
+		}
+
+		// Email
+		function emailOnblur() {
+			var x = document.getElementById("email").value;
+			if (x == "") {
+				document.getElementById("email").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("email").style.border = "2px solid green";
+			}
+		}
+		function emailOnfocus() {
+			var x = document.getElementById("email").value;
+			if (x == "") {
+				document.getElementById("email").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("email").style.border = "2px solid green";
+			}
+		}
+
+		// Address
+		function addressOnblur() {
+			var x = document.getElementById("address").value;
+			if (x == "") {
+				document.getElementById("address").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("address").style.border = "2px solid green";
+			}
+		}
+		function addressOnfocus() {
+			var x = document.getElementById("address").value;
+			if (x == "") {
+				document.getElementById("address").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("address").style.border = "2px solid green";
+			}
+		}
+
+		// Interests
+		function interestsOnblur() {
+			var x = document.getElementById("interests").value;
+			if (x == "") {
+				document.getElementById("interests").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("interests").style.border = "2px solid green";
+			}
+		}
+		function interestsOnfocus() {
+			var x = document.getElementById("interests").value;
+			if (x == "") {
+				document.getElementById("interests").style.border = "2px solid red";
+			}
+			else {
+				document.getElementById("interests").style.border = "2px solid green";
+			}
+		}
+
+		// Submit
+		function outputText(){
+	      document.getElementById("userInformationOutput").innerHTML ="User Information <br>";
+				
+	      var name = document.getElementById("name").value;
+	      document.getElementById("nameOutput").innerHTML = "Name: " + name + "<br>";  
+				
+			  var gender = document.getElementById("gender").value;
+	      document.getElementById("genderOutput").innerHTML = "Gender: " + gender + "<br>";  
+				
+			  var username = document.getElementById("username").value;
+	      document.getElementById("usernameOutput").innerHTML = "Username: " + username + "<br>";
+				
+			  var password = document.getElementById("password").value;
+	      document.getElementById("passwordOutput").innerHTML = "Password: " + password + "<br>";
+				
+				var email = document.getElementById("email").value;
+	      document.getElementById("emailOutput").innerHTML = "Email: " + email + "<br>";
+				
+				var address = document.getElementById("address").value;
+	      document.getElementById("addressOutput").innerHTML = "Address: " + address + "<br>";
+				
+				var interests = document.getElementById("interests").value;
+	      document.getElementById("interestsOutput").innerHTML = "Interests: " + interests + "<br>";
+	      return false;
+		}
+
+		// Reset
+		function clearText(){
+			document.getElementById("userInformationOutput").innerHTML ="";
+      document.getElementById("nameOutput").innerHTML = "";  
+      document.getElementById("genderOutput").innerHTML = "";  
+      document.getElementById("usernameOutput").innerHTML = "";
+      document.getElementById("passwordOutput").innerHTML = "";
+      document.getElementById("emailOutput").innerHTML = "";
+      document.getElementById("addressOutput").innerHTML = "";
+      document.getElementById("interestsOutput").innerHTML = "";
+
+			document.getElementById("name").style.border = "2px solid black";
+			document.getElementById("gender").style.border = "2px solid black";
+			document.getElementById("username").style.border = "2px solid black";
+		document.getElementById("password").style.border = "2px solid black";
+		document.getElementById("email").style.border = "2px solid black";
+		document.getElementById("address").style.border = "2px solid black";
+		document.getElementById("interests").style.border = "2px solid black";
+      return false;
+		}
+	</script>
+</body>
+</html>
